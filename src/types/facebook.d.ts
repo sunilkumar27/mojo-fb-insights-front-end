@@ -48,4 +48,4 @@ declare global {
   }
 }*/
 
-export type { FacebookAuthResponse };
+export type { FacebookAuthResponse, FacebookStatusResponse };

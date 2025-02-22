@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #1877F2;
+        }
+        .steps {
+            margin-top: 20px;
+        }
+        .step {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Deletion Instructions</h1>
+    
+    <p>We respect your privacy and provide multiple ways to delete your data from our system:</p>
+
+    <div class="steps">
+        <div class="step">
+            <h3>Option 1: Delete Through Facebook</h3>
+            <ol>
+                <li>Go to your Facebook Settings & Privacy</li>
+                <li>Click on "Settings"</li>
+                <li>Go to "Apps and Websites"</li>
+                <li>Find our app in the list</li>
+                <li>Click "Remove" to revoke access and request data deletion</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3>Option 2: Contact Us Directly</h3>
+            <p>Send an email to [Your Support Email] with:</p>
+            <ul>
+                <li>Subject: "Data Deletion Request"</li>
+                <li>Your Facebook-associated email</li>
+                <li>Date you used our app</li>
+            </ul>
+            <p>We will process your request within 30 days and send a confirmation email.</p>
+        </div>
+    </div>
+
+    <p>If you have any questions about data deletion, please contact our support team at [Your Support Email].</p>
+</body>
+</html>

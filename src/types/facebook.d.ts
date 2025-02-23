@@ -12,6 +12,13 @@ interface FacebookStatusResponse {
   authResponse: FacebookAuthResponse | null;
 }
 
+declare global {
+  interface Window {
+    fbAsyncInit: () => void;
+    FB: FacebookSDK;
+  }
+}
+
 /*interface FacebookLoginOptions {
   scope: string;
 }

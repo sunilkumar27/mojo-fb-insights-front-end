@@ -1,46 +1,141 @@
-# Getting Started with Create React App
+# Facebook Page Insights Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that allows users to view insights and analytics for their Facebook pages. Built with React, TypeScript, and Tailwind CSS.
+
+## Features
+
+- Facebook OAuth Authentication
+- Page Selection for multiple Facebook pages
+- Insights Dashboard showing:
+  - Total Followers
+  - Engagement Metrics
+  - Page Impressions
+  - Reaction Analytics
+- Date Range Selection for insights data
+- Responsive Design
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Facebook Graph API
+- Axios for API calls
+- React Router for navigation
+- Date-fns for date manipulation
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+- Node.js >=18.0.0
+- A Facebook Developer Account
+- A Facebook App with necessary permissions
+- Access to Facebook Pages you want to analyze
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sunilkumar27/mojo-fb-insights-front-end.git
+   cd facebook-insights-frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory:
+   ```env
+   VITE_API_URL=your_backend_api_url
+   VITE_FACEBOOK_APP_ID=your_facebook_app_id
+   ```
+
+## Development
+
+For local development with HTTPS:
+
+1. Generate SSL certificates (required for Facebook OAuth):
+   ```bash
+   mkcert localhost
+   ```
+
+2. Place the certificates in a `certificates` folder:
+   ```
+   certificates/
+   ├── localhost+2-key.pem
+   └── localhost+2.pem
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+The app will be available at `https://localhost:5173`
+
+## Building for Production
+
+```bash
+npm run build
+```
+
+## Deployment
+
+The project is configured for deployment on Vercel. To deploy:
+
+1. Connect your GitHub repository to Vercel
+2. Configure the environment variables in Vercel:
+   - `VITE_API_URL`
+   - `VITE_FACEBOOK_APP_ID`
+3. Deploy!
+
+## Facebook App Configuration
+
+1. Create a Facebook App in the [Facebook Developers Console](https://developers.facebook.com/)
+2. Add Facebook Login product
+3. Configure OAuth settings:
+   - Add your domain to App Domains
+   - Add OAuth redirect URIs
+   - Enable Client OAuth Login
+4. Request necessary permissions:
+   - pages_read_engagement
+   - pages_show_list
+   - pages_manage_metadata
+
+## Project Structure
+
+```
+src/
+├── components/         # React components
+│   ├── Auth/          # Authentication components
+│   ├── Dashboard/     # Dashboard components
+│   └── Layout/        # Layout components
+├── hooks/             # Custom React hooks
+├── services/          # API services
+├── types/             # TypeScript type definitions
+└── utils/             # Utility functions
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
 
-### `npm start`
+## Contributing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## License
 
-### `npm test`
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Support
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+For support, email sunilkumar27@gmail.com or open an issue in the GitHub repository.

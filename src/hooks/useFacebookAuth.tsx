@@ -37,7 +37,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const handleAuthSuccess = (token: string) => {
     return FacebookService.verifyAccessToken(token)
       .then(response => {
-        setUserProfile(response.user);
+        setUserProfile(response);
         setIsAuthenticated(true);
       })
       .catch(error => {

@@ -6,6 +6,7 @@ export const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  withCredentials: true
 });
 
 // Request interceptor
@@ -30,11 +31,11 @@ api.interceptors.response.use(
   async (error) => {
     if (error.response?.status === 401) {
       // Clear token only if it exists and this isn't a verification request
-      const token = localStorage.getItem('fb_access_token');
+      const token = localStorage.getItem('access_token');
       const isVerifyRequest = error.config.url?.includes('/auth/verify');
 
       if (token && !isVerifyRequest) {
-        localStorage.removeItem('fb_access_token');
+        localStorage.removeItem('access_token');
         window.location.href = '/login';
       }
     }

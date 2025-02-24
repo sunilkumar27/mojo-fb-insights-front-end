@@ -1,6 +1,9 @@
 import React from 'react';
 import { formatMetric } from '../../utils/metricsHelper';
 
+/**
+ * Defines the insights cards.
+ */
 interface InsightCardProps {
   title: string;
   value: number;

@@ -8,7 +8,11 @@ import { FacebookService } from '@/services/facebook';
 import { getDefaultDateRange } from '@/utils/dateHelper';
 import type { FacebookPage, PageInsights } from '@/types/insights';
 
-export default function Dashboard(): JSX.Element {
+/**
+ * Defines the 
+ * @returns 
+ */
+export const Dashboard: React.FC = () => {
   const { isAuthenticated } = useFacebookAuth();
   const [pages, setPages] = useState<FacebookPage[]>([]);
   const [selectedPageId, setSelectedPageId] = useState<string | null>(null);

@@ -1,6 +1,9 @@
 import React from 'react';
 import { FacebookPage } from '../../types/insights';
 
+/**
+ * Page selector to select the page.
+ */
 interface PageSelectorProps {
   pages: FacebookPage[];
   selectedPageId: string | null;

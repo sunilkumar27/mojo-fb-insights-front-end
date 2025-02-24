@@ -1,4 +1,6 @@
-// types/insights.ts
+/**
+ * Types for insights.
+ */
 export interface DateRange {
   since: string;
   until: string;

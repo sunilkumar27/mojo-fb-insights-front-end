@@ -1,5 +1,8 @@
 import { format, subDays, subMonths, startOfDay, endOfDay } from 'date-fns';
 
+/**
+ * Helper utility for date functions.
+ */
 export const DATE_FORMAT = 'yyyy-MM-dd';
 
 export const formatDate = (date: Date, formatStr: string = DATE_FORMAT): string => {

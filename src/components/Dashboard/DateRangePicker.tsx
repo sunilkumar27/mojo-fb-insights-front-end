@@ -1,6 +1,9 @@
 import React from 'react';
 import { formatDate } from '../../utils/dateHelper';
 
+/**
+ * Defines the date range picker.
+ */
 interface DateRangePickerProps {
   startDate: Date;
   endDate: Date;

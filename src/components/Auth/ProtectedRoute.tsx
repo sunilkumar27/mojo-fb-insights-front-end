@@ -6,6 +6,9 @@ interface ProtectedRouteProps {
   children: React.ReactNode;
 }
 
+/**
+ * Route to navigate back to login if not authenticated.
+ */
 export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
   const { isAuthenticated, isLoading } = useFacebookAuth();
 

@@ -1,6 +1,9 @@
 import React from 'react';
 import { useFacebookAuth } from '../../hooks/useFacebookAuth';
 
+/**
+ * Header to display the app title and user profile.
+ */
 export const Header: React.FC = () => {
   const { userProfile, logout } = useFacebookAuth();
 

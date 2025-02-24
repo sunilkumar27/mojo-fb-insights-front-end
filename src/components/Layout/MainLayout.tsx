@@ -1,6 +1,9 @@
 import React from 'react';
 import { Header } from './Header';
 
+/**
+ * Definition for main layout.
+ */
 interface MainLayoutProps {
   children: React.ReactNode;
 }
